@@ -76,11 +76,11 @@ Denoising_Lodox_Images/
 
 ### Installation
 
-1.  git clone \[https://github.com/your-username/Denoising\_Lodox\_Images.git\](https://github.com/your-username/Denoising\_Lodox\_Images.git)cd Denoising\_Lodox\_Images
+1.  `git clone \[https://github.com/your-username/Denoising\_Lodox\_Images.git\](https://github.com/your-username/Denoising\_Lodox\_Images.git)cd Denoising\_Lodox\_Images`
     
-2.  python -m venv venvsource venv/bin/activate # On Windows, use \`venv\\Scripts\\activate\`
+2.  `python -m venv venvsource venv/bin/activate` # On Windows, use `\venv\\Scripts\\activate\`
     
-3.  pip install -r requirements.txt
+3.  `pip install -r requirements.txt`
     
 
 How to Run the Experiments
