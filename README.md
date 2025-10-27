@@ -34,9 +34,35 @@ Key Findings
 Repository Structure
 --------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   Denoising_Lodox_Images/  │  ├── Pre-Processing/  │   ├── Creating_Augmented_Dataset.ipynb  # Notebook for data augmentation  │   └── interactive_cropper.py            # Python script for manual ROI cropping  │  ├── NRCS/  │   ├── Removing_Artifacts.ipynb          # Core notebook for Stage 1 (NRCS destriping)  │   ├── destripe.py                     # Helper functions for NRCS  │   └── FFTW.py                         # FFT helper functions  │  ├── DIP/  │   ├── DeepImagePrior.ipynb              # Core notebook for DIP (used in Stage 1 & 2)  │   ├── models/                           # DIP model architectures (e.g., skip)  │   └── utils/                            # Helper functions for DIP  │  ├── N2S/  │   ├── Noise2Self.ipynb                  # Core notebook for Stage 2 (N2S denoising)  │   ├── models/                           # N2S model architectures (U-Net, DnCNN)  │   └── ...                               # Training and utility scripts  │  ├── Nei2Nei/  │   ├── Neighbor2Neighbor.ipynb           # Core notebook for Stage 2 (Nei2Nei denoising)  │   └── ...                               # Training and utility scripts  │  ├── requirements.txt                      # All Python dependencies  └── README.md                           # This file   `
+`Denoising_Lodox_Images/
+│
+├── Pre-Processing/
+│   ├── Creating_Augmented_Dataset.ipynb  # Notebook for data augmentation
+│   └── interactive_cropper.py            # Python script for manual ROI cropping
+│
+├── NRCS/
+│   ├── Removing_Artifacts.ipynb          # Core notebook for Stage 1 (NRCS destriping)
+│   ├── destripe.py                     # Helper functions for NRCS
+│   └── FFTW.py                         # FFT helper functions
+│
+├── DIP/
+│   ├── DeepImagePrior.ipynb              # Core notebook for DIP (used in Stage 1 & 2)
+│   ├── models/                           # DIP model architectures (e.g., skip)
+│   └── utils/                            # Helper functions for DIP
+│
+├── N2S/
+│   ├── Noise2Self.ipynb                  # Core notebook for Stage 2 (N2S denoising)
+│   ├── models/                           # N2S model architectures (U-Net, DnCNN)
+│   └── ...                               # Training and utility scripts
+│
+├── Nei2Nei/
+│   ├── Neighbor2Neighbor.ipynb           # Core notebook for Stage 2 (Nei2Nei denoising)
+│   └── ...                               # Training and utility scripts
+│
+├── requirements.txt                      # All Python dependencies
+└── README.md                           # This file`
 
-Getting Started
+## Getting Started
 ---------------
 
 ### Prerequisites
