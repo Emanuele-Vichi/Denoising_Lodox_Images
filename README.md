@@ -10,9 +10,9 @@ This project investigates methods to enhance the image quality of low-dose LODOX
 
 A primary, unexpected challenge encountered during data acquisition was the presence of **severe, periodic stripe artifacts** due to a scanner malfunction. The project, therefore, adopted a two-stage approach:
 
-1.  **Stage 1: Artifact Removal (Destriping)**A comparative analysis to find the most effective method for removing the severe stripe artifacts _before_ any denoising could be attempted.
+1.  **Stage 1: Artifact Removal (Destriping)** A comparative analysis to find the most effective method for removing the severe stripe artifacts _before_ any denoising could be attempted.
     
-2.  **Stage 2: Stochastic Denoising**A comparative analysis of modern self-supervised denoising models (which require no clean reference images) applied to the _artifact-cleaned_ data.
+2.  **Stage 2: Stochastic Denoising** A comparative analysis of modern self-supervised denoising models (which require no clean reference images) applied to the _artifact-cleaned_ data.
     
 
 Key Findings
@@ -35,32 +35,32 @@ Repository Structure
 --------------------
 
 `Denoising_Lodox_Images/
-│
-├── Pre-Processing/
-│   ├── Creating_Augmented_Dataset.ipynb  # Notebook for data augmentation
-│   └── interactive_cropper.py            # Python script for manual ROI cropping
-│
-├── NRCS/
-│   ├── Removing_Artifacts.ipynb          # Core notebook for Stage 1 (NRCS destriping)
-│   ├── destripe.py                     # Helper functions for NRCS
-│   └── FFTW.py                         # FFT helper functions
-│
-├── DIP/
-│   ├── DeepImagePrior.ipynb              # Core notebook for DIP (used in Stage 1 & 2)
-│   ├── models/                           # DIP model architectures (e.g., skip)
-│   └── utils/                            # Helper functions for DIP
-│
-├── N2S/
-│   ├── Noise2Self.ipynb                  # Core notebook for Stage 2 (N2S denoising)
-│   ├── models/                           # N2S model architectures (U-Net, DnCNN)
-│   └── ...                               # Training and utility scripts
-│
-├── Nei2Nei/
-│   ├── Neighbor2Neighbor.ipynb           # Core notebook for Stage 2 (Nei2Nei denoising)
-│   └── ...                               # Training and utility scripts
-│
-├── requirements.txt                      # All Python dependencies
-└── README.md                           # This file`
+│  
+├── Pre-Processing/  
+│   ├── Creating_Augmented_Dataset.ipynb  # Notebook for data augmentation  
+│   └── interactive_cropper.py            # Python script for manual ROI cropping  
+│  
+├── NRCS/  
+│   ├── Removing_Artifacts.ipynb          # Core notebook for Stage 1 (NRCS destriping)  
+│   ├── destripe.py                     # Helper functions for NRCS  
+│   └── FFTW.py                         # FFT helper functions  
+│  
+├── DIP/  
+│   ├── DeepImagePrior.ipynb              # Core notebook for DIP (used in Stage 1 & 2)  
+│   ├── models/                           # DIP model architectures (e.g., skip)  
+│   └── utils/                            # Helper functions for DIP  
+│  
+├── N2S/  
+│   ├── Noise2Self.ipynb                  # Core notebook for Stage 2 (N2S denoising)  
+│   ├── models/                           # N2S model architectures (U-Net, DnCNN)  
+│   └── ...                               # Training and utility scripts  
+│  
+├── Nei2Nei/  
+│   ├── Neighbor2Neighbor.ipynb           # Core notebook for Stage 2 (Nei2Nei denoising)  
+│   └── ...                               # Training and utility scripts  
+│  
+├── requirements.txt                      # All Python dependencies  
+└── README.md                           # This file`  
 
 ## Getting Started
 ---------------
