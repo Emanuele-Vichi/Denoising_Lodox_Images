@@ -34,7 +34,7 @@ Key Findings
 Repository Structure
 --------------------
 
-`Denoising_Lodox_Images/
+Denoising_Lodox_Images/
 │  
 ├── Pre-Processing/  
 │   ├── Creating_Augmented_Dataset.ipynb  # Notebook for data augmentation  
@@ -60,7 +60,7 @@ Repository Structure
 │   └── ...                               # Training and utility scripts  
 │  
 ├── requirements.txt                      # All Python dependencies  
-└── README.md                           # This file`  
+└── README.md                           # This file  
 
 ## Getting Started
 ---------------
